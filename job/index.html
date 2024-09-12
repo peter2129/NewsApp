@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloud.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <div class="nav-logo flex logo">
+                <img src="images.jpg" alt="Logo" id="logo" width="70px" height="70px">
+            </div>
+            <div class="nav-links flex">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="finance">Finance</li>
+                    <li class="hover-link nav-item" id="sports">Sports</li>
+                    <li class="hover-link nav-item" id="crypto">Crypto</li>
+                    <li class="hover-link nav-item" id="international">International</li>
+                    <li class="hover-link nav-item" id="technical">Technical</li>
+                    <li class="hover-link nav-item" id="AI">AI</li>
+                    <li class="hover-link nav-item" id="education">Education</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" id="search-text" class="news-input" placeholder="Search news...">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            <!-- News cards will be injected here -->
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img decoding="async" src="" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">Source Date</h6>
+                <p class="news-desc" id="news-desc">Description</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
